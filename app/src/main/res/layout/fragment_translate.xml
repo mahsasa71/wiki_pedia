@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".FragmentTranslate">
+
+
+    <TextView
+        android:id="@+id/textsoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        android:text="what do we call the below word in English?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txt_random"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_soal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textsoal" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_soal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="سوال"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_random"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pakidan"
+        android:layout_width="wrap_content"
+        android:text="delet"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_soal"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_random" />
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/edtpasokh"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp"
+        android:hint="پاسخ شما؟"
+        app:layout_constraintBottom_toTopOf="@id/contaner_2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_soal"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <FrameLayout
+        android:id="@+id/contaner_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_soal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_javab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="جواب"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contaner_2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

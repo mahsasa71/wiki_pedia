@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    app:cardCornerRadius="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="4dp"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_explore"
+            app:srcCompat="@drawable/jamiroquai"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_margin="8dp"
+                android:text="jameriij"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_detail"
+                android:layout_margin="4dp"
+                android:text="bhbjkb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <View
+                android:backgroundTint="#857D7D"
+                android:layout_margin="4dp"
+                android:layout_width="40dp"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="wrap_content"
+                android:maxLines="8"
+                android:ellipsize="end"
+                android:lineSpacingExtra="6dp"
+                android:text="bjzhxvhjvzxvhzvxmzbxnzb nmx znmbxjnnm,znxm,znx,mnNXm,nnxzmnx.znx.znxmznxmzn?nhxhjkzjgxbjkzbxjkzk"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
